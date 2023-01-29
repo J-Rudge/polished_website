@@ -1,0 +1,13 @@
+<header>
+    <a class="logo-link">
+        <img src="../../../assets/images/polished-logo.svg"/>
+        <h3>POLISHED</h3>
+    </a>
+    <nav>
+        <ul>
+            <li *ngFor="let link of links">
+                <a [href]="link.url">{{link.title}}</a>
+            </li>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,9 @@
+<div>
+    <h3>{{content?.title}}</h3>
+    <ul *ngIf="services">
+        <li *ngFor="let service of services">
+            <p>{{service.title}}</p>
+            <img [src]="service.imageSrc"/>
+        </li>
+    </ul>
+</div>

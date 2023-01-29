@@ -1,0 +1,6 @@
+footer {
+    background-color: var(--dark-blue);
+    width: 100%;
+    min-height: 80px;
+    box-shadow: 0px 100px 0px 100px var(--dark-blue);
+}
