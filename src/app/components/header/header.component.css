@@ -41,3 +41,66 @@ li {
 .logo-link {
     margin-left: 20px;
 }
+
+.hamburger {
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 5px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.hamburger > span {
+    display: inline-block;
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+@media only screen and (min-width: 769px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: var(--dark-blue);
+        margin: 0px;
+        padding: 10px;
+        width: 145px;
+        z-index: 1;
+
+        transition: right 0.3s ease-out;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: var(--opaque-grey);
+    }
+
+    .overlay.hidden {
+        display: none;
+    }
+
+    nav.hidden {
+        right: -145px;
+    }
+
+    ul {
+        flex-direction: column;
+        row-gap: 15px;
+        height: 100%;
+        margin: 0px;
+        padding: 20px;
+    }
+}

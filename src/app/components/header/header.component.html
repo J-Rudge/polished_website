@@ -3,11 +3,19 @@
         <img src="assets/images/polished-logo.svg"/>
         <h3>POLISHED</h3>
     </a>
-    <nav>
+    <button class="hamburger mobile" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav [ngClass]="{'hidden': !this.visibility }">
         <ul>
             <li *ngFor="let link of links">
                 <a [href]="link.url">{{link.title}}</a>
             </li>
         </ul>
     </nav>
+    <div class="overlay" [ngClass]="{hidden: !this.visibility}" (click)="toggleMenu()">
+
+    </div>
 </header>

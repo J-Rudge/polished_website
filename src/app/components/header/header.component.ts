@@ -9,4 +9,9 @@ import { HeaderLinks } from 'src/app/data/header-links';
 })
 export class HeaderComponent {
   links: HeaderLink[] = HeaderLinks;
+  visibility: boolean = false;
+
+  toggleMenu(): void {
+    this.visibility = !this.visibility;
+  }
 }

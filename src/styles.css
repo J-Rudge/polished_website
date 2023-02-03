@@ -19,6 +19,7 @@
 
 :root {
     --dark-blue: #070648;
+    --opaque-grey: rgba(33, 33, 33, 0.5);
 }
 
 * {
